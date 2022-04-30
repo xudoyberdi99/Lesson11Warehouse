@@ -17,13 +17,13 @@ import javax.persistence.OneToOne;
 @Data
 @Entity
 public class Product extends AbctrtEntity {
-    @ManyToOne
+    @ManyToOne(optional = false)
     private Category category;
     @OneToOne
     private Attachment photo;
 
     private String code;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     private Measurement measurement;
 }
