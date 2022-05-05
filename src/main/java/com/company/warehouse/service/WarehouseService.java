@@ -19,7 +19,6 @@ public class WarehouseService {
         if (byName){
             return new Result("bunday ombor mavjud",false);
         }
-
         warehouseRepository.save(warehouse);
         return new Result("muvaffaqiyatli saqlandi",true);
     }
